@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loder {
+            height: 300px;
+            width: 300px;
+            border: 15px solid #ddd;
+            border-radius: 50%;
+            border-top-color: red;
+            animation: rotate 3s infinite;
+        }
+        @keyframes  rotate{
+            0%{
+                rotate: 0deg;
+                border-top-color: red;
+            }
+           50%{
+                rotate: 180deg;
+                border-top-color: green;
+            }
+            75%{
+                rotate: 270deg;
+                border-top-color: blue;
+            }
+            100%{
+                rotate: 360deg;
+                border-top-color: yellow;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="loder"></div>
+</body>
+
+</html>

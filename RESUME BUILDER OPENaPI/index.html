@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background: rgba(127, 255, 212, 0.533);
+            margin-left: 15%;
+            margin-right: 15%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+        }
+
+        .head1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #000;
+            font-size: 25px;
+
+        }
+
+        .head2 {
+            color: black;
+            font-size: 19px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        /* designing part */
+        h1 {
+            position:relative;
+        }
+
+        h1::after {
+            content: '|';
+            position:absolute;
+            right: 0;
+            color: white;
+            background-color: #0c0b14;
+            width: 100%;
+            animation: writing 45s ease-in forwards, blink 1s infinite;
+        }
+
+        @keyframes writing {
+            to {
+                width: 0%;
+            }
+
+
+        }
+
+        @keyframes blink{
+            40%{
+                color: transparent;
+            }
+        }
+        .box{
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background-color: #0c0b14;
+            padding-left:30px;
+            padding-top:50px;
+            color: white;
+        }
+    </style>
+</head>
+<!-- //--------------------------body-------------// -->
+<body>
+    <br><br>
+    <div class="xyz">
+
+        <center>
+            <h1 class="head1">Resume builder Open.AI</h1>
+            <h1 class="head2">Version 2.0</h1> <br><br>
+        </center>
+    </div>
+    <div class="box">
+        <script>
+            let a = prompt("Enter your name:");
+            let b = prompt("Enter your address:");
+            let c = prompt("Enter your phone number:");
+            let pt=parseInt(c);
+            let d = prompt("Enter your email Id:");
+            let e = prompt("Enter your university:");
+            
+            document.write("<h1>My Self :</h1>"+a);
+            document.write("<br><br><br><br>");
+            
+            document.write("<h1>My address :</h1>"+b);
+            document.write("<br><br><br><br>");
+            
+            document.write("<h1>My moNo :</h1>"+pt);
+            document.write("<br><br><br><br>");
+            
+            document.write("<h1>My emailid :</h1>"+d);
+            document.write("<br><br><br><br>");
+            
+            document.write("<h1>My University :</h1>"+ e);
+        </script>
+    </div>
+    
+</body>
+
+</html>
